@@ -5,11 +5,12 @@ import {Provider} from 'react-redux';
 import {itemReducer} from './reducer/reducer';
 import Item from './components/item/item';
 import jsonData from 'json-loader!./data/data.json';
+import App from './components/App/App';
 
 let store = createStore(itemReducer, jsonData);
 
 ReactDOM.render(
     <Provider store={store}>
-        <Item/>
+        <App/>   
     </Provider>,
 document.getElementById('items'));
