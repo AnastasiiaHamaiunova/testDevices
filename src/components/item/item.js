@@ -1,5 +1,6 @@
 import React from 'react'
 import {connect} from 'react-redux';
+import DeviceItem from '../deviceItem/deviceItem';
 
 class Item extends React.Component{
     constructor(props){
@@ -10,7 +11,10 @@ class Item extends React.Component{
         return(
             <ul>
             {this.props.items.map((item, index)=>{
-             return <li>{item.name} - {item.id}</li>
+             return <li key={index}><DeviceItem name={item.name}
+                                    location={item.location}
+                                    status={item.status}
+            /></li>
             })}                
             </ul>
         )

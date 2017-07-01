@@ -7,8 +7,7 @@ class FilterBox extends React.Component {
     render(){
         return(
             <div className="filterBox"> 
-                <select value="select">
-                    "HelloWorld
+                <select>
                 </select>
             </div>
             

@@ -19,6 +19,7 @@
   "dependencies": {
     "axios": "^0.16.1",
     "babel-plugin-transform-object-assign": "^6.22.0",
+    "css-loader": "^0.28.4",
     "prop-types": "^15.5.10",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
@@ -26,7 +27,8 @@
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.1",
     "recharts": "^1.0.0-alpha.0",
-    "redux": "^3.6.0"
+    "redux": "^3.6.0",
+    "style-loader": "^0.16.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.7",

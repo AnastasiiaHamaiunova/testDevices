@@ -82,7 +82,12 @@ module.exports = {
         loaders: [{
           test: /\.json/,
           loader: 'json'
-        }]
+        },
+		{
+                test: /\.css$/,
+                loader: 'style!css'
+            }
+		]
     },
     devServer: {
         contentBase: path.join(__dirname, "dist"),
