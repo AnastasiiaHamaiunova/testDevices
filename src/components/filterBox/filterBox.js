@@ -1,4 +1,5 @@
 import React from 'react';
+import 'style-loader!./filterBox.css';
 
 class FilterBox extends React.Component {
     constructor(props){
@@ -6,8 +7,13 @@ class FilterBox extends React.Component {
     }
     render(){
         return(
+            
             <div className="filterBox"> 
                 <select>
+                      <option value="volvo">Volvo</option>
+                      <option value="saab">Saab</option>
+                      <option value="mercedes">Mercedes</option>
+                      <option value="audi">Audi</option>
                 </select>
             </div>
             
